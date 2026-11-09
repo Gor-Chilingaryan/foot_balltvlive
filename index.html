@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Football TV Live — съёмка футбольных матчей</title>
+<meta name="description" content="Профессиональная съёмка футбольных матчей, прямые трансляции и ролики с лучшими моментами. Забронируйте съёмку онлайн.">
+<meta name="theme-color" content="#090d16">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Football TV Live — съёмка футбольных матчей">
+<meta property="og:description" content="Съёмка матчей, прямой эфир и лучшие моменты. Бронирование онлайн.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="hy_AM">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Football TV Live","description":"Съёмка футбольных матчей, прямые трансляции, ролики с лучшими моментами","sameAs":["https://www.instagram.com/foot_balltvlive/"],"availableLanguage":["ru","en","hy"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090d16;--bg2:#0f172a;--glass:rgba(255,255,255,.05);--bd:rgba(255,255,255,.1);--ink:#f1f5f9;--text:#b4bfd0;--muted:#8391a7;--a1:#6366f1;--a2:#22d3ee;--grad:linear-gradient(120deg,#818cf8,#22d3ee);--hg:linear-gradient(120deg,#fff 10%,#a5b4fc 55%,#67e8f9);--sans:"Plus Jakarta Sans",Inter,"Segoe UI",system-ui,Arial,sans-serif;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f4f6fb;--bg2:#fff;--glass:rgba(255,255,255,.72);--bd:rgba(15,23,42,.1);--ink:#0f172a;--text:#334155;--muted:#64748b;--hg:linear-gradient(120deg,#0f172a 10%,#4f46e5 55%,#0891b2);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.7 var(--sans)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(700px 420px at 12% -8%,rgba(99,102,241,.28),transparent 70%),radial-gradient(560px 420px at 92% 6%,rgba(34,211,238,.16),transparent 70%)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+h1,h2,h3{color:var(--ink);line-height:1.15;margin:0;letter-spacing:-.02em}
+img,svg,video{max-width:100%;height:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--grad);color:#07101f;padding:10px 16px;z-index:50;border-radius:10px}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--a2);outline-offset:3px}
+nav{position:sticky;top:0;z-index:30;background:rgba(9,13,22,.6);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--bd)}
+:root[data-theme="light"] nav{background:rgba(244,246,251,.78)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
+.logo{font-weight:800;font-size:.9rem;color:var(--ink);text-decoration:none;letter-spacing:.06em}
+.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.links{display:flex;gap:10px;align-items:center}
+.links>.btn{display:none}
+.menu{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:rgba(9,13,22,.96);backdrop-filter:blur(18px);border-bottom:1px solid var(--bd);padding:6px 20px 16px}
+:root[data-theme="light"] .menu{background:rgba(244,246,251,.98)}
+.menu.open{display:flex}
+.menu a{color:var(--ink);text-decoration:none;padding:14px 0;border-bottom:1px solid var(--bd);transition:color .3s}
+.menu a:hover{color:var(--a2)}
+.menu .mbook{color:var(--a2);font-weight:700;border:0}
+.theme,.burger{width:40px;height:40px;border-radius:50%;background:var(--glass);border:1px solid var(--bd);color:var(--ink);cursor:pointer;font-size:1rem;line-height:1;transition:.3s}
+.theme{margin-top:10px}
+.theme:hover,.burger:hover{border-color:var(--a2);transform:scale(1.08)}
+.langs{display:flex;gap:4px}
+.lang{font:700 .72rem var(--sans);color:var(--text);background:transparent;border:1px solid var(--bd);border-radius:999px;padding:6px 9px;min-height:32px;cursor:pointer;transition:.3s}
+.lang.on,.lang:hover{background:var(--grad);color:#07101f;border-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;font:700 .95rem var(--sans);padding:12px 28px;border-radius:999px;border:1px solid transparent;background:var(--grad);color:#07101f;text-decoration:none;cursor:pointer;box-shadow:0 8px 30px -8px rgba(34,211,238,.55);transition:all .3s}
+.btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 14px 40px -6px rgba(99,102,241,.75)}
+.btn.out{background:var(--glass);color:var(--ink);border-color:var(--bd);backdrop-filter:blur(10px);box-shadow:none}
+.btn.out:hover{border-color:var(--a2);box-shadow:0 0 30px -6px rgba(34,211,238,.6)}
+@media(min-width:760px){.links{gap:18px}.links>.btn{display:inline-flex;min-height:40px;padding:8px 20px}.menu{display:flex;position:static;flex-direction:row;align-items:center;gap:22px;background:none;backdrop-filter:none;border:0;padding:0}.menu a{padding:0;border:0;font-size:.9rem}.menu .mbook,.burger{display:none}.theme{margin:0}}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes pulse{50%{opacity:.3}}
+@keyframes float{to{transform:translateY(-12px)}}
+@keyframes ball{0%{left:12%;top:70%}35%{left:48%;top:30%}70%{left:70%;top:62%}100%{left:88%;top:46%}}
+@keyframes pop{to{transform:scale(1.08)}}
+@keyframes load{from{width:0}to{width:100%}}
+.rv{opacity:0}
+.rv.in{opacity:1;animation:rise .7s ease backwards;animation-delay:var(--d,0s)}
+.hero{position:relative;text-align:center;padding:56px 0 48px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;max-width:100%;left:50%;top:-140px;margin-left:-260px;background:radial-gradient(circle,rgba(99,102,241,.38),transparent 65%);filter:blur(40px);animation:float 7s ease-in-out infinite alternate;pointer-events:none}
+.hero .wrap{position:relative}
+.hero .wrap>*{animation:rise .8s ease backwards}
+.hero .wrap>:nth-child(2){animation-delay:.1s}.hero .wrap>:nth-child(3){animation-delay:.2s}.hero .wrap>:nth-child(4){animation-delay:.3s}.hero .wrap>:nth-child(5){animation-delay:.45s}
+.eyebrow{display:inline-block;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--a2);background:var(--glass);border:1px solid var(--bd);padding:7px 16px;border-radius:999px;margin-bottom:20px;backdrop-filter:blur(10px)}
+.hero h1{font-size:clamp(2.1rem,7.5vw,4.4rem);font-weight:800;max-width:820px;margin:0 auto 20px;background:var(--hg);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:560px;margin:0 auto 30px;font-size:1.05rem}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stage{margin:44px auto 0;max-width:760px;padding:10px;border-radius:28px;background:var(--glass);border:1px solid var(--bd);backdrop-filter:blur(16px);box-shadow:0 30px 80px -30px rgba(99,102,241,.6);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s ease-out}
+.screen{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#0c4a37,#07241c);border:1px solid var(--bd)}
+.pitch{position:absolute;inset:0;width:100%;height:100%}
+.ball{position:absolute;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 18px 4px rgba(255,255,255,.7);animation:ball 6s ease-in-out infinite alternate}
+.hud{position:absolute;left:10px;right:10px;top:10px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;font-size:.72rem;color:#fff}
+.hud>span,.live-badge{padding:4px 11px;border-radius:999px}
+.hud>.score,.hud>.clock,.viewers{background:rgba(9,13,22,.65);backdrop-filter:blur(8px)}
+.live-badge{display:inline-flex;gap:6px;align-items:center;background:rgba(239,68,68,.92);color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.08em}
+.live-badge i{width:7px;height:7px;border-radius:50%;background:#fff;animation:pulse 1.2s infinite}
+.screen>.live-badge,.viewers{position:absolute;top:10px}
+.screen>.live-badge{left:10px}
+.viewers{right:10px;color:#fff;font-weight:700;font-size:.72rem;padding:4px 11px;border-radius:999px}
+.dot{position:absolute;width:12px;height:12px;border-radius:50%;background:#818cf8;box-shadow:0 0 14px #818cf8;animation:float 2.4s ease-in-out infinite alternate}
+.dot.b{background:#22d3ee;box-shadow:0 0 14px #22d3ee;animation-delay:.6s}
+.goal{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(2.2rem,9vw,3.6rem);font-weight:800;color:#fff;text-shadow:0 0 30px #22d3ee;animation:pop 1.2s ease-in-out infinite alternate}
+.bar{position:absolute;left:14px;right:14px;bottom:14px;height:6px;border-radius:99px;background:rgba(255,255,255,.2);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--grad);animation:load 3s linear infinite}
+section{padding:56px 0}
+.alt{background:linear-gradient(180deg,transparent,rgba(99,102,241,.07),transparent)}
+.head{text-align:center;margin-bottom:36px}
+.head .eyebrow{margin-bottom:14px}
+.head h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:800}
+.rule{width:56px;height:3px;border-radius:9px;background:var(--grad);margin:18px auto 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{position:relative;overflow:hidden;background:var(--glass);border:1px solid var(--bd);border-radius:24px;padding:26px 22px;backdrop-filter:blur(14px);transition:transform .3s,border-color .3s,box-shadow .3s}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(99,102,241,.25),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{transform:translateY(-4px) scale(1.03);border-color:rgba(129,140,248,.55);box-shadow:0 14px 44px -12px rgba(99,102,241,.55)}
+.card:hover::before{opacity:1}
+.card h3{font-size:1.2rem;margin-bottom:8px;position:relative}
+.card p{margin:0;color:var(--muted);font-size:.95rem;position:relative}
+.ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:var(--grad);color:#07101f;margin-bottom:16px;position:relative}
+.ico svg{width:26px;height:26px}
+.num{font-size:2.2rem;font-weight:800;line-height:1;margin-bottom:14px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;position:relative}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.tab{font:600 .92rem var(--sans);color:var(--text);background:var(--glass);border:1px solid var(--bd);border-radius:999px;padding:10px 20px;min-height:44px;cursor:pointer;transition:all .3s;backdrop-filter:blur(10px)}
+.tab:hover{border-color:var(--a2);transform:scale(1.05)}
+.tab[aria-selected=true]{background:var(--grad);color:#07101f;border-color:transparent}
+.panel{display:none;gap:24px;align-items:center;max-width:920px;margin:0 auto}
+.panel.on{display:grid;animation:rise .5s ease backwards}
+.ptxt h3{font-size:1.6rem;margin-bottom:10px}
+.ptxt p{margin:0 0 22px}
+@media(min-width:760px){.panel.on{grid-template-columns:1fr 1.15fr}}
+.about{display:grid;gap:28px;align-items:center}
+.about p{margin:0 0 14px}
+.quote{padding:8px 0 8px 22px;border-left:3px solid var(--a1);font-size:1.3rem;font-weight:600;color:var(--ink);line-height:1.5}
+@media(min-width:768px){.about{grid-template-columns:1fr 1fr;gap:56px}section{padding:84px 0}.hero{padding:88px 0 72px}}
+details{background:var(--glass);border:1px solid var(--bd);border-radius:20px;margin-bottom:12px;padding:0 22px;backdrop-filter:blur(12px);transition:border-color .3s}
+details:hover,details[open]{border-color:rgba(129,140,248,.5)}
+summary{cursor:pointer;padding:18px 0;font:600 1.02rem var(--sans);color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--a2);font-size:1.4rem;line-height:1;transition:transform .3s}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 18px;color:var(--muted)}
+.faq{max-width:720px;margin:0 auto}
+form{max-width:780px;margin:0 auto;background:var(--glass);border:1px solid var(--bd);border-radius:28px;backdrop-filter:blur(16px);padding:24px 20px;display:grid;grid-template-columns:1fr;gap:16px;box-shadow:0 30px 80px -40px rgba(99,102,241,.5)}
+@media(min-width:600px){form{grid-template-columns:1fr 1fr;padding:34px}}
+.full{grid-column:1/-1}
+label{display:grid;gap:7px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+input,select,textarea{font:400 1rem var(--sans);letter-spacing:0;text-transform:none;color:var(--ink);background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:14px;padding:13px 14px;width:100%;transition:border-color .3s,box-shadow .3s}
+:root[data-theme="light"] input,:root[data-theme="light"] select,:root[data-theme="light"] textarea{background:rgba(255,255,255,.8)}
+option{background:var(--bg2);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--a2);box-shadow:0 0 0 3px rgba(34,211,238,.2)}
+form .btn{width:100%}
+#result{display:none;max-width:780px;margin:20px auto 0;background:var(--glass);border:1px solid var(--a2);border-radius:24px;padding:26px;backdrop-filter:blur(14px)}
+#result h3{margin-bottom:8px}
+#result pre{white-space:pre-wrap;word-break:break-word;font:400 .95rem/1.6 var(--sans);color:var(--ink);background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:16px 0}
+.note{color:var(--muted);font-size:.9rem;margin:0}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.banner{text-align:center;padding:48px 22px;border-radius:32px;background:linear-gradient(135deg,rgba(99,102,241,.28),rgba(34,211,238,.14));border:1px solid var(--bd);backdrop-filter:blur(14px)}
+.banner h2{font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:800;max-width:640px;margin:0 auto 24px}
+footer{border-top:1px solid var(--bd);text-align:center;padding:40px 0 48px;color:var(--muted)}
+footer .logo{display:block;font-size:1.2rem;margin-bottom:8px}
+footer p{margin:6px 0;font-size:.9rem}
+footer a{color:var(--a2)}
+@media(max-width:380px){.logo{font-size:.78rem}.wrap{padding:0 16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before{animation:none!important;transition:none!important}.rv{opacity:1}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="pitch" viewBox="0 0 400 225"><g fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"><rect x="10" y="10" width="380" height="205" rx="4"/><path d="M200 10v205"/><circle cx="200" cy="112" r="32"/><rect x="10" y="62" width="58" height="101"/><rect x="332" y="62" width="58" height="101"/></g></symbol></svg>
+<nav aria-label="Main"><div class="wrap">
+  <a class="logo" href="#top">FOOTBALL <b>TV</b> LIVE</a>
+  <div class="links">
+    <span class="menu" id="menu"><a href="#about">О нас</a><a href="#services">Услуги</a><a href="#process">Как мы работаем</a><a href="#faq">Вопросы</a><a class="mbook" href="#book">Бронь</a><button class="theme" id="theme" type="button" aria-label="Theme">◐</button></span>
+    <a class="btn" href="#book" style="padding:9px 20px">Бронь</a>
+    <span class="langs"><button class="lang on" data-l="ru" type="button">RU</button><button class="lang" data-l="en" type="button">EN</button><button class="lang" data-l="hy" type="button">ՀԱՅ</button></span>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="eyebrow">Съёмка футбольных матчей</div>
+  <h1>Каждая игра заслуживает быть запечатлённой</h1>
+  <p>Профессионально снимаем матчи, турниры и тренировки. Выберите дату — остальное мы берём на себя.</p>
+  <div class="cta">
+    <a class="btn" href="#book">Забронировать съёмку</a>
+    <a class="btn out" href="https://www.instagram.com/foot_balltvlive/" target="_blank" rel="noopener">Наш Instagram</a>
+  </div>
+  <div class="stage" id="stage" aria-hidden="true"><div class="screen">
+    <svg class="pitch"><use href="#pitch"/></svg><span class="ball"></span>
+    <div class="hud"><span class="live-badge"><i></i>LIVE</span><span class="score">FC ALPHA 2 : 1 FC BETA</span><span class="clock" id="clock">67′</span></div>
+  </div></div>
+</div></header>
+
+<main id="main">
+<section id="about"><div class="wrap about">
+  <div>
+    <div class="eyebrow">О нас</div>
+    <h2 style="font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:20px">Футбол — наша страсть</h2>
+    <p>Мы снимаем футбольные игры и знаем, какие моменты важны: гол, сэйв, эмоции на скамейке запасных и на трибунах.</p>
+    <p>Результат вы получаете в виде видео, которым приятно делиться и которое хочется пересматривать.</p>
+  </div>
+  <div class="quote">Игра длится девяносто минут, а память о ней — на всю жизнь.</div>
+</div></section>
+
+<section id="services" class="alt"><div class="wrap">
+  <div class="head"><div class="eyebrow">Услуги</div><h2>Что мы предлагаем</h2><div class="rule"></div></div>
+  <div class="grid">
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><h3>Съёмка матча</h3><p>Полная запись игры от первого до финального свистка.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg></div><h3>Прямой эфир</h3><p>Онлайн-трансляция, чтобы близкие и болельщики смотрели игру из любой точки.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Лучшие моменты</h3><p>Динамичный ролик с голами и яркими эпизодами для социальных сетей.</p></div>
+  </div>
+</div></section>
+
+<section id="demo"><div class="wrap">
+  <div class="head"><div class="eyebrow">Услуги</div><h2>Выберите формат</h2><div class="rule"></div></div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" type="button">Съёмка матча</button>
+    <button class="tab" role="tab" aria-selected="false" tabindex="-1" type="button">Прямой эфир</button>
+    <button class="tab" role="tab" aria-selected="false" tabindex="-1" type="button">Лучшие моменты</button>
+  </div>
+  <div class="panel on" role="tabpanel"><div class="ptxt"><h3>Съёмка матча</h3><p>Полная запись игры от первого до финального свистка.</p><a class="btn" href="#book" data-svc="0">Забронировать съёмку</a></div>
+    <div class="screen" aria-hidden="true"><svg class="pitch"><use href="#pitch"/></svg><span class="live-badge"><i></i>REC</span><i class="dot" style="left:30%;top:40%"></i><i class="dot" style="left:42%;top:62%"></i><i class="dot b" style="left:60%;top:35%"></i><i class="dot b" style="left:72%;top:60%"></i></div></div>
+  <div class="panel" role="tabpanel"><div class="ptxt"><h3>Прямой эфир</h3><p>Онлайн-трансляция, чтобы близкие и болельщики смотрели игру из любой точки.</p><a class="btn" href="#book" data-svc="1">Забронировать съёмку</a></div>
+    <div class="screen" aria-hidden="true"><svg class="pitch"><use href="#pitch"/></svg><span class="live-badge"><i></i>LIVE</span><span class="viewers">▶ 1 248</span><span class="ball"></span></div></div>
+  <div class="panel" role="tabpanel"><div class="ptxt"><h3>Лучшие моменты</h3><p>Динамичный ролик с голами и яркими эпизодами для социальных сетей.</p><a class="btn" href="#book" data-svc="2">Забронировать съёмку</a></div>
+    <div class="screen" aria-hidden="true"><svg class="pitch"><use href="#pitch"/></svg><span class="goal">GOAL!</span><span class="bar"><i></i></span></div></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="head"><div class="eyebrow">Процесс</div><h2>Как мы работаем</h2><div class="rule"></div></div>
+  <div class="grid steps">
+    <div class="card"><div class="num">01</div><h3>Заявка</h3><p>Заполните форму: дата, время и место игры.</p></div>
+    <div class="card"><div class="num">02</div><h3>Подтверждение</h3><p>Мы свяжемся с вами и согласуем детали.</p></div>
+    <div class="card"><div class="num">03</div><h3>Съёмка</h3><p>Приезжаем заранее, настраиваем технику и снимаем игру.</p></div>
+    <div class="card"><div class="num">04</div><h3>Результат</h3><p>Вы получаете готовое видео и ролик с лучшими моментами.</p></div>
+  </div>
+</div></section>
+
+<section id="book" class="alt"><div class="wrap">
+  <div class="head"><div class="eyebrow">Бронирование</div><h2>Забронировать съёмку</h2><div class="rule"></div></div>
+  <form id="f">
+    <label>Ваше имя<input name="name" required minlength="2" autocomplete="name"></label>
+    <label>Телефон<input name="phone" type="tel" inputmode="tel" required autocomplete="tel" placeholder="+374"></label>
+    <label>Дата игры<input name="date" type="date" required></label>
+    <label>Время начала<input name="time" type="time" required></label>
+    <label>Услуга<select name="service">
+      <option>Съёмка матча</option><option>Прямой эфир</option><option>Съёмка + лучшие моменты</option><option>Турнир (несколько игр)</option>
+    </select></label>
+    <label>Поле / адрес<input name="place" required></label>
+    <label class="full">Комментарий<textarea name="note" rows="3" placeholder="Команды, длительность, пожелания"></textarea></label>
+    <div class="full"><button class="btn dark" type="submit">Подтвердить бронь</button></div>
+  </form>
+  <div id="result" aria-live="polite">
+    <h3>Заявка готова</h3>
+    <p class="note">Нажмите «Отправить в Instagram»: текст скопируется и откроется наш чат. Вставьте сообщение и отправьте.</p>
+    <pre id="msg"></pre>
+    <div class="row">
+      <a class="btn dark" id="send" href="https://ig.me/m/foot_balltvlive" target="_blank" rel="noopener">Отправить в Instagram</a>
+      <button class="btn dark" id="copy" type="button" style="background:transparent;color:var(--ink)">Скопировать текст</button>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="head"><div class="eyebrow">FAQ</div><h2>Частые вопросы</h2><div class="rule"></div></div>
+  <div class="faq">
+    <details><summary>Как быстро подтверждается бронь?</summary><p>Мы отвечаем в Instagram и по телефону, как только получаем вашу заявку.</p></details>
+    <details><summary>Можно ли снять несколько игр за день?</summary><p>Да, выберите вариант «Турнир» и опишите расписание в комментарии.</p></details>
+    <details><summary>Когда я получу видео?</summary><p>Сроки зависят от формата. Мы называем их при подтверждении брони.</p></details>
+    <details><summary>Снимаете ли вы в других городах?</summary><p>Напишите нам адрес, и мы обсудим выезд.</p></details>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="banner"><h2>Каждая игра заслуживает быть запечатлённой</h2><a class="btn" href="#book">Забронировать съёмку</a></div></div></section>
+</main>
+<footer><div class="wrap">
+  <span class="logo">FOOTBALL <b>TV</b> LIVE</span>
+  <p>Съёмка футбольных матчей</p>
+  <p><a href="https://www.instagram.com/foot_balltvlive/" target="_blank" rel="noopener">@foot_balltvlive</a></p>
+</div></footer>
+
+<script>
+(function(){
+  var f=document.getElementById('f'),res=document.getElementById('result'),pre=document.getElementById('msg');
+  f.elements['date'].min=new Date().toISOString().slice(0,10);
+  var lang='ru';
+  var EN={"Выберите формат":"Choose a format","Перейти к содержимому":"Skip to content","О нас":"About","Услуги":"Services","Как мы работаем":"How we work","Вопросы":"FAQ","Бронь":"Book",
+  "Съёмка футбольных матчей":"Football match filming","Каждая игра заслуживает быть запечатлённой":"Every game deserves to be captured",
+  "Профессионально снимаем матчи, турниры и тренировки. Выберите дату — остальное мы берём на себя.":"We professionally film matches, tournaments and training sessions. Pick a date and we will take care of the rest.",
+  "Забронировать съёмку":"Book a filming session","Наш Instagram":"Our Instagram","Футбол — наша страсть":"Football is our passion",
+  "Мы снимаем футбольные игры и знаем, какие моменты важны: гол, сэйв, эмоции на скамейке запасных и на трибунах.":"We film football games and know which moments matter: the goal, the save, the emotions on the bench and in the stands.",
+  "Результат вы получаете в виде видео, которым приятно делиться и которое хочется пересматривать.":"You receive a video that is a pleasure to share and to watch again.",
+  "Игра длится девяносто минут, а память о ней — на всю жизнь.":"A game lasts ninety minutes, but the memory of it lasts a lifetime.",
+  "Что мы предлагаем":"What we offer","Съёмка матча":"Match filming","Полная запись игры от первого до финального свистка.":"Full recording of the game from the first whistle to the last.",
+  "Прямой эфир":"Live stream","Онлайн-трансляция, чтобы близкие и болельщики смотрели игру из любой точки.":"An online broadcast so family and fans can watch the game from anywhere.",
+  "Лучшие моменты":"Highlights","Динамичный ролик с голами и яркими эпизодами для социальных сетей.":"A dynamic clip with goals and key moments for social media.",
+  "Процесс":"Process","Заявка":"Request","Заполните форму: дата, время и место игры.":"Fill in the form: date, time and place of the game.",
+  "Подтверждение":"Confirmation","Мы свяжемся с вами и согласуем детали.":"We will contact you and agree on the details.",
+  "Съёмка":"Filming","Приезжаем заранее, настраиваем технику и снимаем игру.":"We arrive early, set up the equipment and film the game.",
+  "Результат":"Result","Вы получаете готовое видео и ролик с лучшими моментами.":"You receive the finished video and a highlights clip.",
+  "Бронирование":"Booking","Ваше имя":"Your name","Телефон":"Phone","Дата игры":"Game date","Время начала":"Start time","Услуга":"Service","Поле / адрес":"Field / address","Комментарий":"Comment",
+  "Съёмка + лучшие моменты":"Filming + highlights","Турнир (несколько игр)":"Tournament (several games)","Подтвердить бронь":"Confirm booking",
+  "Заявка готова":"Your request is ready","Нажмите «Отправить в Instagram»: текст скопируется и откроется наш чат. Вставьте сообщение и отправьте.":"Press “Send via Instagram”: the text will be copied and our chat will open. Paste the message and send it.",
+  "Отправить в Instagram":"Send via Instagram","Частые вопросы":"Frequently asked questions",
+  "Как быстро подтверждается бронь?":"How quickly is a booking confirmed?","Мы отвечаем в Instagram и по телефону, как только получаем вашу заявку.":"We reply on Instagram and by phone as soon as we receive your request.",
+  "Можно ли снять несколько игр за день?":"Can you film several games in one day?","Да, выберите вариант «Турнир» и опишите расписание в комментарии.":"Yes, choose the “Tournament” option and describe the schedule in the comment.",
+  "Когда я получу видео?":"When will I get the video?","Сроки зависят от формата. Мы называем их при подтверждении брони.":"Timing depends on the format. We confirm it when we confirm your booking.",
+  "Снимаете ли вы в других городах?":"Do you film in other cities?","Напишите нам адрес, и мы обсудим выезд.":"Send us the address and we will discuss travelling there."};
+  var HY={"Выберите формат":"Ընտրեք ձևաչափը","Перейти к содержимому":"Անցնել բովանդակությանը","О нас":"Մեր մասին","Услуги":"Ծառայություններ","Как мы работаем":"Ինչպես ենք աշխատում","Вопросы":"Հարցեր","Бронь":"Ամրագրում",
+  "Съёмка футбольных матчей":"Ֆուտբոլային խաղերի նկարահանում","Каждая игра заслуживает быть запечатлённой":"Յուրաքանչյուր խաղ արժանի է պահպանվելու",
+  "Профессионально снимаем матчи, турниры и тренировки. Выберите дату — остальное мы берём на себя.":"Մասնագիտորեն նկարահանում ենք խաղեր, մրցաշարեր և մարզումներ։ Ընտրեք ամսաթիվը, մնացածը մենք կանենք։",
+  "Забронировать съёмку":"Ամրագրել նկարահանում","Наш Instagram":"Մեր Instagram-ը","Футбол — наша страсть":"Ֆուտբոլը մեր կիրքն է",
+  "Мы снимаем футбольные игры и знаем, какие моменты важны: гол, сэйв, эмоции на скамейке запасных и на трибунах.":"Մենք նկարահանում ենք ֆուտբոլային խաղեր և գիտենք, թե որ պահերն են կարևոր՝ գոլը, փրկած գնդակը, հույզերը պահեստայինների նստարանին և տրիբունաներում։",
+  "Результат вы получаете в виде видео, которым приятно делиться и которое хочется пересматривать.":"Արդյունքը ստանում եք տեսանյութի տեսքով, որով հաճելի է կիսվել և որը ցանկալի է նորից դիտել։",
+  "Игра длится девяносто минут, а память о ней — на всю жизнь.":"Խաղը տևում է իննսուն րոպե, իսկ դրա հիշողությունը՝ ողջ կյանքում։",
+  "Что мы предлагаем":"Ինչ ենք առաջարկում","Съёмка матча":"Խաղի նկարահանում","Полная запись игры от первого до финального свистка.":"Խաղի ամբողջական ձայնագրություն՝ առաջին սուլիչից մինչև վերջինը։",
+  "Прямой эфир":"Ուղիղ եթեր","Онлайн-трансляция, чтобы близкие и болельщики смотрели игру из любой точки.":"Առցանց հեռարձակում, որպեսզի հարազատները և երկրպագուները դիտեն խաղը ցանկացած վայրից։",
+  "Лучшие моменты":"Լավագույն պահերը","Динамичный ролик с голами и яркими эпизодами для социальных сетей.":"Դինամիկ հոլովակ գոլերով և վառ դրվագներով՝ սոցիալական ցանցերի համար։",
+  "Процесс":"Գործընթաց","Заявка":"Հայտ","Заполните форму: дата, время и место игры.":"Լրացրեք ձևաթուղթը՝ խաղի ամսաթիվը, ժամը և վայրը։",
+  "Подтверждение":"Հաստատում","Мы свяжемся с вами и согласуем детали.":"Մենք կկապվենք ձեզ հետ և կհամաձայնեցնենք մանրամասները։",
+  "Съёмка":"Նկարահանում","Приезжаем заранее, настраиваем технику и снимаем игру.":"Ժամանում ենք նախօրոք, կարգավորում ենք տեխնիկան և նկարահանում խաղը։",
+  "Результат":"Արդյունք","Вы получаете готовое видео и ролик с лучшими моментами.":"Դուք ստանում եք պատրաստի տեսանյութը և լավագույն պահերի հոլովակը։",
+  "Бронирование":"Ամրագրում","Ваше имя":"Ձեր անունը","Телефон":"Հեռախոս","Дата игры":"Խաղի ամսաթիվը","Время начала":"Սկսվելու ժամը","Услуга":"Ծառայություն","Поле / адрес":"Դաշտ / հասցե","Комментарий":"Մեկնաբանություն",
+  "Съёмка + лучшие моменты":"Նկարահանում + լավագույն պահեր","Турнир (несколько игр)":"Մրցաշար (մի քանի խաղ)","Подтвердить бронь":"Հաստատել ամրագրումը",
+  "Заявка готова":"Հայտը պատրաստ է","Нажмите «Отправить в Instagram»: текст скопируется и откроется наш чат. Вставьте сообщение и отправьте.":"Սեղմեք «Ուղարկել Instagram-ով»․ տեքստը կպատճենվի և կբացվի մեր չատը։ Տեղադրեք հաղորդագրությունը և ուղարկեք։",
+  "Отправить в Instagram":"Ուղարկել Instagram-ով","Частые вопросы":"Հաճախ տրվող հարցեր",
+  "Как быстро подтверждается бронь?":"Որքա՞ն արագ է հաստատվում ամրագրումը","Мы отвечаем в Instagram и по телефону, как только получаем вашу заявку.":"Մենք պատասխանում ենք Instagram-ով և հեռախոսով, հենց ստանում ենք ձեր հայտը։",
+  "Можно ли снять несколько игр за день?":"Հնարավո՞ր է մեկ օրում նկարահանել մի քանի խաղ","Да, выберите вариант «Турнир» и опишите расписание в комментарии.":"Այո, ընտրեք «Մրցաշար» տարբերակը և նկարագրեք ժամանակացույցը մեկնաբանության մեջ։",
+  "Когда я получу видео?":"Ե՞րբ կստանամ տեսանյութը","Сроки зависят от формата. Мы называем их при подтверждении брони.":"Ժամկետները կախված են ձևաչափից։ Դրանք կնշենք ամրագրումը հաստատելիս։",
+  "Снимаете ли вы в других городах?":"Նկարահանո՞ւմ եք այլ քաղաքներում","Напишите нам адрес, и мы обсудим выезд.":"Գրեք մեզ հասցեն, և կքննարկենք մեկնելը։"};
+  var D={en:EN,hy:HY};
+  var PHS={ru:"Команды, длительность, пожелания",en:"Teams, duration, wishes",hy:"Թիմեր, տևողություն, մաղթանքներ"};
+  var CP={ru:"Скопировать текст",en:"Copy text",hy:"Պատճենել տեքստը"},CD={ru:"Скопировано",en:"Copied",hy:"Պատճենվեց"};
+  var TT={ru:"Football TV Live — съёмка футбольных матчей",en:"Football TV Live — football match filming",hy:"Football TV Live — ֆուտբոլային խաղերի նկարահանում"};
+  var M={ru:["Здравствуйте! Хочу забронировать съёмку.","Имя","Телефон","Дата","Время","Услуга","Место","Комментарий"],
+    en:["Hello! I would like to book a filming session.","Name","Phone","Date","Time","Service","Place","Comment"],
+    hy:["Բարև ձեզ։ Ցանկանում եմ ամրագրել նկարահանում։","Անուն","Հեռախոս","Ամսաթիվ","Ժամ","Ծառայություն","Վայր","Մեկնաբանություն"]};
+  function msgOf(l,v){var m=M[l];return m[0]+'\n'+m[1]+': '+v('name')+'\n'+m[2]+': '+v('phone')+'\n'+m[3]+': '+v('date')+'\n'+m[4]+': '+v('time')+'\n'+m[5]+': '+v('service')+'\n'+m[6]+': '+v('place')+(v('note')?'\n'+m[7]+': '+v('note'):'')}
+  var bg=document.getElementById('burger'),mn=document.getElementById('menu');
+  function closeMenu(){mn.classList.remove('open');bg.setAttribute('aria-expanded','false')}
+  bg.addEventListener('click',function(){var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false')});
+  mn.addEventListener('click',function(e){if(e.target.tagName==='A')closeMenu()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu()});
+  var btns=document.querySelectorAll('.lang');
+  function mark(l){btns.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-l')===l)})}
+  function setLang(l){
+    lang=l;document.documentElement.lang=l;mark(l);
+    var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,list=[];
+    while(n=w.nextNode()){if(n.parentNode.tagName!=='SCRIPT'&&n.parentNode.tagName!=='STYLE')list.push(n)}
+    list.forEach(function(t){
+      var k=t.__ru||t.nodeValue.trim();
+      if(!k||!EN[k])return;
+      t.__ru=k;t.nodeValue=D[l]?D[l][k]:k;
+    });
+    f.elements['note'].placeholder=PHS[l];
+    document.getElementById('copy').textContent=CP[l];
+    document.title=TT[l];
+    if(res.style.display==='block'){pre.textContent=msgOf(l,function(x){return f.elements[x].value.trim()})}
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-l'))})});
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  if(saved==='en'||saved==='hy')setLang(saved);
+  function copy(t){
+    try{if(navigator.clipboard)return navigator.clipboard.writeText(t)}catch(e){}
+    try{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}catch(e){}
+    return Promise.resolve();
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(n){return f.elements[n].value.trim()};
+    pre.textContent=msgOf(lang,v);
+    res.style.display='block';res.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.getElementById('copy').addEventListener('click',function(){var b=this;copy(pre.textContent).then(function(){b.textContent=CD[lang]})});
+  document.getElementById('send').addEventListener('click',function(){copy(pre.textContent)});
+})();
+</script>
+<script>
+(function(){
+  var r=document.documentElement,rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  try{if(localStorage.getItem('theme')==='light')r.setAttribute('data-theme','light')}catch(e){}
+  document.getElementById('theme').addEventListener('click',function(){
+    var l=r.getAttribute('data-theme')==='light';
+    if(l)r.removeAttribute('data-theme');else r.setAttribute('data-theme','light');
+    try{localStorage.setItem('theme',l?'dark':'light')}catch(e){}
+  });
+  if('IntersectionObserver' in window&&!rm){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+    document.querySelectorAll('.head,.card,.quote,.about>div,details,form,.tabs,.panel.on,.banner').forEach(function(el){
+      el.classList.add('rv');
+      el.style.setProperty('--d',(Array.prototype.indexOf.call(el.parentNode.children,el)%4)*.08+'s');
+      io.observe(el);
+    });
+  }
+  document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var b=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-b.left)+'px');c.style.setProperty('--my',(e.clientY-b.top)+'px')})});
+  var st=document.getElementById('stage');
+  if(st&&!rm){
+    st.addEventListener('pointermove',function(e){var b=st.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;st.style.setProperty('--ry',(x*10)+'deg');st.style.setProperty('--rx',(-y*8)+'deg')});
+    st.addEventListener('pointerleave',function(){st.style.setProperty('--ry','0deg');st.style.setProperty('--rx','0deg')});
+  }
+  var ck=document.getElementById('clock'),m=67;
+  if(ck&&!rm)setInterval(function(){m=m>=90?1:m+1;ck.textContent=m+'\u2032'},2500);
+  var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+  function pick(i){tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i?'true':'false');t.tabIndex=j===i?0:-1;panels[j].classList.toggle('on',j===i)})}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(i)});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length;pick(n);tabs[n].focus()}});
+  });
+  document.querySelectorAll('[data-svc]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('f').elements['service'].selectedIndex=+b.getAttribute('data-svc')})});
+})();
+</script>
+</body>
+</html>
